@@ -5,11 +5,25 @@
   color: white;
   background-color: #3535f7;
   text-align: center;
+  margin: 0px;
+  padding: 1vh;
+}
+.home-graphs{
+padding: 1vh 4vw;
+  max-width: 1200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.Scatter-Graph{
-  background-color: rgb(53, 53, 247);
-  color: white;
-  max-width: 500px;
+.graph-heading{
+  color: rgb(53, 53, 247);
   padding: 0px;
+  text-align: center;
+  margin: 2rem 0px;
+}
+
+.hr-graph{
+  border: 1px solid lightgrey;
+  margin: 2vh 0px;
 }

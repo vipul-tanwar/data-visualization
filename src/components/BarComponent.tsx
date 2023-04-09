@@ -41,7 +41,7 @@ const BarComponent = () => {
 
   return (
     <>
-      <div>BarComponent</div>
+      <h2 className="graph-heading">BarComponent</h2>
       <ReactEcharts option={options} />
     </>
   );

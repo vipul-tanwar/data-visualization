@@ -41,7 +41,7 @@ const option = {
 const ScatterComponent = () => {
   return (
     <>
-      <h3 className="Scatter-Graph" >Scatter Component</h3>
+      <h2 className="graph-heading">Scatter Component</h2>
       <ReactEcharts option={option} />
     </>
   );
