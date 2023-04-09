@@ -1,24 +1,13 @@
 import React from "react";
 import ReactEcharts from "echarts-for-react";
-import { wineData } from "../constants/Wine-Data";
 
-interface WineData {
-  "Alcohol": number;
-  "Malic Acid": number;
-  "Ash": number;
-  "Alcalinity of ash": number;
-  "Magnesium": number;
-  "Total phenols": number;
-  "Flavanoids": number;
-  "Nonflavanoid phenols": number;
-  "Proanthocyanins": string ;
-  "Color intensity": number;
-  "Hue": number;
-  "OD280/OD315 of diluted wines": number;
-  "Unknown": number;
-  }
+import wineData from "../data/Wine-Data.json";
+import GraphHeader from "./GraphHeader";
 
-const option = {
+import { WineData } from "../interfaces/Scatter";
+
+// Mapping data in scatter component
+const options = {
   title: {
     text: "Color Intensity vs Hue",
   },
@@ -32,7 +21,10 @@ const option = {
   series: [
     {
       symbolSize: 8,
-      data: wineData.map((item: WineData ) => [item["Color intensity"], item["Hue"]]),
+      data: wineData.map((item: WineData) => [
+        item["Color intensity"],
+        item["Hue"],
+      ]),
       type: "scatter",
     },
   ],
@@ -41,8 +33,10 @@ const option = {
 const ScatterComponent = () => {
   return (
     <>
-      <h2 className="graph-heading">Scatter Component</h2>
-      <ReactEcharts option={option} />
+      {/* Scatter Custom Title */}
+      <GraphHeader title="Scatter Component" />
+      {/* Loading Scatter Component */}
+      <ReactEcharts option={options} />
     </>
   );
 };

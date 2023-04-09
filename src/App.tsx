@@ -1,19 +1,11 @@
 import React from "react";
-
-import ScatterComponent from "./components/ScatterComponent";
-import BarComponent from "./components/BarComponent";
-
 import "./App.css";
+import Graphs from "./pages/Graphs";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="home-title">Data Visualization</h1>
-      <div className="home-graphs" >
-        <ScatterComponent />
-        <hr className="hr-graph" />
-        <BarComponent />
-      </div>
+      <Graphs />
     </div>
   );
 }
