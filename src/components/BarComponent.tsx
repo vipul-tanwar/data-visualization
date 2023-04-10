@@ -10,7 +10,7 @@ import { WineData } from "../interfaces/Bar";
 // Mapping data in bar component
 const options = {
   title: {
-    text: "Color Intensity vs Malic Acid",
+    text: "Alcohol vs Malic Acid",
   },
   tooltip: {},
   xAxis: {
