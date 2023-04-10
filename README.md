@@ -26,3 +26,9 @@ src/
 |-- api => api call function
 |-- data => contain json data (Wine-Data.json)
 ```
+
+
+
+## Netlify Hosting
+
+Check out the [Live App](https://data-visualization-apps.netlify.app/).
